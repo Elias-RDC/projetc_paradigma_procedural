@@ -4,7 +4,7 @@ html, body, #home {
 }
 
 body {
-	background: url(../imagens/php-img.jpg);
+	background: url(php-img.jpg);
 	background-attachment: fixed; 
 	font-family: Helvetica,Arial,sans-serif;
 }
@@ -212,7 +212,7 @@ h3 {
 		font-size: 1em;
 	}	
 	.d-flex{
-		background-image: url(../imagens/php-2066704_640.jpg);
+		background-image: url(php-2066704_640.jpg);
 	}
 }
 
@@ -225,7 +225,7 @@ h3 {
 		margin: 10px 15px;
 	}
 	.d-flex{
-		background-image: url(../imagens/php-2066704_640.jpg);
+		background-image: url(php-2066704_640.jpg);
 	}
 }
 
