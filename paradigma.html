@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Paradigma Procedural</title>
+    <style>
+        body {
+            background-color: #c7c7c7;
+            font-family: Arial, sans-serif;
+            color: #333;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        h1, h2, h3 {
+            color: #2c3e50;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        p, ul {
+            margin-bottom: 20px;
+        }
+
+        hr {
+            border: none;
+            border-top: 2px solid #bdc3c7;
+            margin: 40px 0;
+        }
+
+        .img {
+            border-radius: 10px;
+            margin: 20px 0;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .conteudo {
+            display: none;
+            background-color: #ecf0f1;
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #2980b9;
+            font-weight: bold;
+            transition: color 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        a:hover {
+            color: #e74c3c;
+            cursor: pointer;
+        }
+
+        button {
+            background-color: #2980b9;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 1em;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #3498db;
+        }
+
+        /* Style for conclusion and references */
+        h2 {
+            border-bottom: 2px solid #bdc3c7;
+            padding-bottom: 5px;
+        }
+
+    </style>
+    <script>
+        function mostrarConteudo(id) {
+            // Oculta todos os conteúdos
+            var conteudos = document.getElementsByClassName("conteudo");
+            for (var i = 0; i < conteudos.length; i++) {
+                conteudos[i].style.display = "none";
+            }
+
+            // Mostra o conteúdo específico
+            var conteudo = document.getElementById(id);
+            conteudo.style.display = "block";
+        }
+    </script>
+</head>
+<body>
+    <header><!-- inicio Cabecalho -->
+        <nav class="navbar navbar-expand-md navbar-light fixed-top navbar-transparente">
+          <div class="container">
+            
+            <a href="index.html" class="navbar-brand">
+              <img src="imagens/PHP_icon.gif" width="142">
+            </a>
+
+            </div>
+        </nav>
+      </header><!--/fim Cabecalho -->
+    
+
+    <h1>Paradigma de Programação Procedural</h1>
+
+    <p>
+        Um programa feito neste formato nada mais é que uma sequência
+de comandos principal, que possui em um ou mais pontos desta sequência,
+comandos de chamada a procedimentos. Os procedimentos são blocos de
+programa, nomeados e delimitados, que podem ser usados repetidas vezes, sem
+que para isto, tenham que a cada vez que forem necessários, fazerem parte da
+sequência principal e portanto tenham que ser rescritos em todos os trechos, onde
+serão executados. Geralmente os procedimentos são escritos (declarados), no início
+do programa e em cada ponto da sequência principal, onde um deles seja
+necessário é colocado um comando de chamada, neste ponto passa a ser
+executada a sequência de comandos daquele bloco de código referente ao
+procedimento, finalizando-se esta sequência, o programa continua a sequencia
+principal, chamando qualquer outro procedimento, que seja necessário.
+
+    </p>
+
+    <hr>
+
+    <!-- Conteúdo da história -->
+    <h2>O Nascimento e a Morte do Paradigma Procedural</h2>
+
+    <h3>Surgimento do Paradigma</h3>
+    <p>
+        No final dos anos 1950, surgiu o Paradigma Procedural. Esse paradigma emergiu com as primeiras linguagens de programação de alto nível, como o Fortran. Ele se concentrou na execução sequencial de instruções, permitindo um controle linear e lógico sobre o fluxo do programa.
+    </p>
+
+    <h3>Ascensão do Paradigma</h3>
+    <p>
+         Ele incentivou a utilização de estruturas de controle nítidas, como sequência, seleção (if-else) e repetição (loops), diminuindo a dependência de comandos GOTO que tornavam o código mais difícil de compreender e manter. Essa metodologia, inserida no contexto do paradigma procedural, contribuiu para a criação de um código mais modular e bem estruturado, especialmente com a chegada de linguagens como ALGOL e C.
+    </p>
+
+    <img class="img" src="https://repository.aip.org/islandora/object/nbla:288079/datastream/MEDIUM_SIZE/view" width="300" height="auto" alt="História da programação procedural">
+
+    <h3>Declínio e Expansão para Outros Paradigmas</h3>
+    <p>
+        Durante as décadas de 80 e 90, a programação procedural começou a perder sua relevância devido o surgimento de novos paradigmas e o avanço das linguagens e tecnologias, com destaque para a programação orientada a objetos (POO). 
+    </p>
+
+    <hr>
+
+    <h2>Clique nos links abaixo para ver mais:</h2>
+    <ul>
+        <li><a href="#" onclick="mostrarConteudo('conteudoVantagens')">Vantagens</a></li>
+        <li><a href="#" onclick="mostrarConteudo('conteudoDesvantagens')">Desvantagens</a></li>
+        <li><a href="#" onclick="mostrarConteudo('conteudoLinguagens')">Linguagens</a></li>
+    </ul>
+
+    <!-- Conteúdo das vantagens -->
+    <div id="conteudoVantagens" class="conteudo">
+        <h3>Vantagens da Programação Procedural</h3>
+        <ul>
+            <li>Facilita o teste e a depuração.</li>
+            <li>Reduz a repetição de código.</li>
+            <li>Permite o compartilhamento de dados entre sub-rotinas.</li>
+        </ul>
+    </div>
+
+    <!-- Conteúdo das desvantagens -->
+    <div id="conteudoDesvantagens" class="conteudo">
+        <h3>Desvantagens da Programação Procedural</h3>
+        <p>Um ponto negativo do paradigma procedural é que ele foca mais nas ações a serem realizadas...</p>
+    </div>
+
+    <!-- Conteúdo das linguagens -->
+    <div id="conteudoLinguagens" class="conteudo">
+        <h3>Linguagens Adaptadas ao Paradigma Procedural</h3>
+        <ul>
+            <li>Ada</li>
+            <li>ALGOL</li>
+            <li>C</li>
+            <li>Fortran</li>
+            <li>Pascal</li>
+            <li>PHP</li>
+            <li>Rapira</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <!--Conclusão-->
+    <h2>Conclusão</h2>
+    <p>
+        Simplicidade, modularidade, economia de código, entre outras tantas
+vantagens, fazem com que a programação procedural, tenha grande eficiência na
+resolução de grande parte dos problemas. O que lhe garante “vida eterna”.
+
+    </p>
+
+    <hr>
+
+    <!-- Referências -->
+    <h2>Referências</h2>
+    <ul>
+        <li><a href="https://pt.scribd.com/document/40633191/Paradigmas-de-programacao" target="_blank">Paradigmas de Programação - Sincero Zeferino Filho</a></li>
+        <li><a href="https://isaaccomputerscience.org/concepts/prog_pas_paradigm" target="_blank">Isaac Computer Science - Procedural Paradigm</a></li>
+        <li><a href="https://guia.dev/pt/pillars/languages-and-tools/programming-paradigms.html#procedural" target="_blank">Guia Dev - Programming Paradigms</a></li>
+    </ul>
+
+</body>
+</html>
