@@ -204,6 +204,24 @@ h3 {
 	border-radius: 30px;
 	text-transform: justify;
 }
+.participants{
+	display: flex;
+	flex-wrap:wrap ;
+	justify-content: center;
+	gap: 20px;
+}
+.participant{
+	text-align: center;
+}
+.github{
+	height: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 5px solid #000;
+}
+.text_color{
+	color: white;
+}
 
 /* Extra small devices (portrait phones, less than 576px)*/
 @media (max-width: 575.98px) {
